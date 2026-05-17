@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Dra. María de los Ángeles Agrasar | Abogada - Zona Oeste GBA y CABA</title>
+<meta name="description" content="Abogada en Zona Oeste del GBA y Capital Federal. Derecho de familia, laboral y civil. Consultas aranceladas."/>
+<meta property="og:title" content="Dra. María de los Ángeles Agrasar · Abogada Zona Oeste GBA y CABA"/>
+<meta property="og:url" content="https://mariadelosangelesagrasar.com.ar"/>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap');
+
+  *{margin:0;padding:0;box-sizing:border-box;}
+  :root{
+    --rosa:#c9a0a0;
+    --rosa-oscuro:#a67c7c;
+    --beige:#f5ede6;
+    --beige-oscuro:#e8d8cc;
+    --dorado:#b8860b;
+    --marron:#6b4c4c;
+    --gris:#8a7070;
+    --blanco:#fffaf7;
+  }
+  html{scroll-behavior:smooth;}
+  body{font-family:'Lato',sans-serif;color:var(--marron);background:var(--blanco);}
+
+  /* NAV */
+  nav{position:fixed;top:0;width:100%;background:rgba(166,124,124,0.97);z-index:999;padding:16px 40px;display:flex;justify-content:space-between;align-items:center;}
+  .nav-logo{color:#fff;font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:700;}
+  .nav-links a{color:rgba(255,255,255,0.85);text-decoration:none;margin-left:28px;font-size:.9rem;letter-spacing:.5px;transition:color .3s;}
+  .nav-links a:hover{color:#fff;}
+
+  /* HERO */
+  .hero{min-height:100vh;background:linear-gradient(135deg,#a67c7c 0%,#c9a0a0 50%,#d4b0a0 100%);display:flex;align-items:center;justify-content:center;text-align:center;padding:100px 20px 60px;position:relative;overflow:hidden;}
+  .hero::before{content:'';position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");}
+  .hero-content{position:relative;max-width:800px;}
+  .hero-badge{display:inline-block;background:rgba(255,255,255,.2);border:1px solid rgba(255,255,255,.5);color:#fff;padding:6px 18px;border-radius:30px;font-size:.8rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:24px;}
+  .hero h1{font-family:'Playfair Display',serif;font-size:clamp(2rem,5vw,3.6rem);color:#fff;line-height:1.2;margin-bottom:20px;-webkit-text-stroke:0.5px rgba(0,0,0,0.3);}
+  .hero h1 span{color:#f9e4d4;-webkit-text-stroke:0.5px rgba(0,0,0,0.25);}
+  .section-title{-webkit-text-stroke:0.3px rgba(0,0,0,0.15);}
+  .sobre-img-inner .nombre{-webkit-text-stroke:0.3px rgba(0,0,0,0.2);}
+  .hero p{color:rgba(255,255,255,.85);font-size:1.15rem;line-height:1.7;max-width:600px;margin:0 auto 36px;}
+  .btn-group{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;}
+  .btn-primary{background:#fff;color:var(--rosa-oscuro);padding:14px 32px;border-radius:30px;text-decoration:none;font-weight:700;font-size:1rem;transition:all .3s;letter-spacing:.5px;}
+  .btn-primary:hover{background:#f9e4d4;transform:translateY(-2px);box-shadow:0 8px 20px rgba(0,0,0,.15);}
+  .btn-secondary{background:transparent;color:#fff;padding:14px 32px;border-radius:30px;text-decoration:none;font-weight:400;font-size:1rem;border:1px solid rgba(255,255,255,.6);transition:all .3s;}
+  .btn-secondary:hover{border-color:#fff;background:rgba(255,255,255,.1);}
+  .hero-stats{display:flex;gap:48px;justify-content:center;margin-top:56px;padding-top:40px;border-top:1px solid rgba(255,255,255,.2);flex-wrap:wrap;}
+  .stat{text-align:center;}
+  .stat-num{font-family:'Playfair Display',serif;font-size:2rem;color:#f9e4d4;font-weight:700;}
+  .stat-label{color:rgba(255,255,255,.7);font-size:.8rem;text-transform:uppercase;letter-spacing:1px;margin-top:4px;}
+
+  /* SECCIONES */
+  section{padding:80px 20px;}
+  .container{max-width:1100px;margin:0 auto;}
+  .section-tag{display:inline-block;color:var(--rosa-oscuro);font-size:.8rem;letter-spacing:3px;text-transform:uppercase;margin-bottom:12px;font-weight:700;}
+  .section-title{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,4vw,2.6rem);margin-bottom:16px;line-height:1.2;color:var(--marron);}
+  .section-sub{color:var(--gris);font-size:1.05rem;line-height:1.7;max-width:620px;}
+
+  /* SOBRE MÍ */
+  .sobre{background:var(--beige);}
+  .sobre-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;margin-top:48px;}
+  .sobre-img{background:linear-gradient(135deg,var(--rosa-oscuro),var(--rosa));border-radius:16px;height:400px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;}
+  .sobre-img::after{content:'⚖';font-size:8rem;opacity:.1;position:absolute;}
+  .sobre-img-inner{text-align:center;color:#fff;position:relative;z-index:1;}
+  .sobre-img-inner .nombre{font-family:'Playfair Display',serif;font-size:1.4rem;color:#f9e4d4;margin-bottom:8px;}
+  .sobre-img-inner .titulo{color:rgba(255,255,255,.8);font-size:.9rem;letter-spacing:1px;}
+  .sobre-texto p{color:#7a5c5c;line-height:1.8;font-size:1.05rem;margin-bottom:16px;}
+  .sobre-texto .destacado{color:var(--marron);font-weight:700;font-size:1.05rem;margin-top:24px;padding-left:16px;border-left:3px solid var(--rosa);}
+
+  /* SERVICIOS */
+  .servicios{background:var(--blanco);}
+  .servicios-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:28px;margin-top:48px;}
+  .servicio-card{background:var(--beige);border:1px solid var(--beige-oscuro);border-radius:16px;padding:36px 28px;transition:all .3s;position:relative;overflow:hidden;}
+  .servicio-card::before{content:'';position:absolute;top:0;left:0;width:3px;height:0;background:var(--rosa);transition:height .3s;}
+  .servicio-card:hover{transform:translateY(-4px);box-shadow:0 12px 32px rgba(166,124,124,.15);}
+  .servicio-card:hover::before{height:100%;}
+  .servicio-icon{font-size:2.4rem;margin-bottom:20px;}
+  .servicio-card h3{font-family:'Playfair Display',serif;font-size:1.3rem;margin-bottom:12px;color:var(--marron);}
+  .servicio-card p{color:var(--gris);line-height:1.7;font-size:.95rem;}
+  .servicio-lista{margin-top:16px;padding-left:0;list-style:none;}
+  .servicio-lista li{color:var(--gris);font-size:.9rem;padding:4px 0;padding-left:16px;position:relative;}
+  .servicio-lista li::before{content:'›';position:absolute;left:0;color:var(--rosa-oscuro);font-weight:700;}
+
+  /* POR QUÉ */
+  .porque{background:linear-gradient(135deg,var(--rosa-oscuro),var(--rosa));}
+  .porque .section-title{color:#fff;}
+  .porque .section-sub{color:rgba(255,255,255,.75);}
+  .porque .section-tag{color:#f9e4d4;}
+  .porque-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:32px;margin-top:48px;}
+  .porq-item{text-align:center;padding:28px 20px;border:1px solid rgba(255,255,255,.2);border-radius:16px;transition:all .3s;background:rgba(255,255,255,.08);}
+  .porq-item:hover{border-color:rgba(255,255,255,.5);background:rgba(255,255,255,.15);}
+  .porq-icon{font-size:2.2rem;margin-bottom:16px;}
+  .porq-item h4{color:#fff;font-family:'Playfair Display',serif;font-size:1.1rem;margin-bottom:10px;}
+  .porq-item p{color:rgba(255,255,255,.7);font-size:.9rem;line-height:1.6;}
+
+  /* ZONA */
+  .zona{background:var(--beige);text-align:center;}
+  .zona-chips{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:32px;}
+  .chip{background:#fff;border:1px solid var(--rosa);color:var(--marron);padding:8px 20px;border-radius:30px;font-size:.9rem;}
+  .chip.capital{background:var(--rosa);color:#fff;border-color:var(--rosa);}
+
+  /* CONTACTO */
+  .contacto{background:var(--blanco);}
+  .contacto-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start;margin-top:48px;}
+  .contact-info h3{font-family:'Playfair Display',serif;font-size:1.5rem;margin-bottom:20px;color:var(--marron);}
+  .contact-item{display:flex;align-items:center;gap:16px;margin-bottom:20px;padding:16px;background:var(--beige);border-radius:12px;}
+  .contact-item-icon{font-size:1.4rem;width:44px;text-align:center;}
+  .contact-item-text{font-size:.95rem;color:var(--gris);}
+  .contact-item-text strong{display:block;color:var(--marron);margin-bottom:2px;}
+  .contact-item-text a{color:var(--gris);text-decoration:none;}
+  .contact-item-text a:hover{color:var(--rosa-oscuro);}
+  .form-group{margin-bottom:18px;}
+  .form-group label{display:block;font-size:.85rem;color:var(--marron);font-weight:700;margin-bottom:6px;letter-spacing:.5px;}
+  .form-group input,.form-group textarea,.form-group select{width:100%;padding:12px 16px;border:1px solid var(--beige-oscuro);border-radius:10px;font-family:'Lato',sans-serif;font-size:.95rem;color:var(--marron);background:var(--beige);transition:border .3s;outline:none;}
+  .form-group input:focus,.form-group textarea:focus,.form-group select:focus{border-color:var(--rosa);}
+  .form-group textarea{resize:vertical;min-height:120px;}
+  .btn-submit{width:100%;background:var(--rosa-oscuro);color:#fff;padding:14px;border:none;border-radius:30px;font-size:1rem;font-weight:700;cursor:pointer;transition:all .3s;letter-spacing:.5px;}
+  .btn-submit:hover{background:var(--marron);transform:translateY(-1px);}
+
+  /* WA FLOTANTE */
+  .wa-btn{position:fixed;bottom:28px;right:28px;background:#25d366;color:#fff;width:60px;height:60px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.8rem;text-decoration:none;box-shadow:0 4px 20px rgba(37,211,102,.5);z-index:999;transition:transform .3s;}
+  .wa-btn:hover{transform:scale(1.1);}
+
+  /* FOOTER */
+  footer{background:var(--rosa-oscuro);color:rgba(255,255,255,.8);text-align:center;padding:28px 20px;font-size:.85rem;}
+  footer span{color:#f9e4d4;font-weight:700;}
+
+  @media(max-width:768px){
+    nav{padding:14px 20px;}
+    .nav-links{display:none;}
+    .sobre-grid,.contacto-grid{grid-template-columns:1fr;}
+    .hero-stats{gap:28px;}
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">Dra. Agrasar</div>
+  <div class="nav-links">
+    <a href="#sobre">Sobre mí</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#zona">Zona</a>
+    <a href="#contacto">Contacto</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <div class="hero-badge">Abogada · Matriculada en Capital Federal, Provincia de Buenos Aires y Fuero Federal</div>
+    <h1>Tu problema legal tiene<br/><span>solución. Y una abogada</span><br/>cerca tuyo para resolverlo.</h1>
+    <p>Asesoramiento legal claro, humano y personalizado para familias y trabajadores del Oeste del GBA y Capital Federal.</p>
+    <div class="btn-group">
+      <a href="https://wa.me/541156629575?text=Hola%20Dra.%20Agrasar%2C%20quisiera%20consultar%20sobre%20un%20tema%20legal." target="_blank" class="btn-primary">💬 Escribime por WhatsApp</a>
+      <a href="#servicios" class="btn-secondary">Ver servicios</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><div class="stat-num">3</div><div class="stat-label">Áreas de práctica</div></div>
+      <div class="stat"><div class="stat-num">100%</div><div class="stat-label">Atención personalizada</div></div>
+      <div class="stat"><div class="stat-num">GBA<br/>y CABA</div><div class="stat-label">Cobertura</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- SOBRE MÍ -->
+<section class="sobre" id="sobre">
+  <div class="container">
+    <div class="sobre-grid">
+      <div class="sobre-img">
+        <div class="sobre-img-inner">
+          <div class="nombre">Dra. María de los Ángeles Agrasar</div>
+          <div class="titulo">Abogada · Matriculada en Capital Federal,<br/>Provincia de Buenos Aires y Fuero Federal</div>
+        </div>
+      </div>
+      <div class="sobre-texto">
+        <div class="section-tag">Sobre mí</div>
+        <h2 class="section-title">Una abogada que te escucha y te acompaña</h2>
+        <p>Soy María de los Ángeles Agrasar, abogada con ejercicio profesional en la Provincia de Buenos Aires y Capital Federal. Me especializo en acompañar a personas y familias en los momentos más difíciles y decisivos de su vida.</p>
+        <p>Creo que el acceso a la justicia tiene que ser claro y cercano. Por eso mi compromiso es explicarte todo en términos simples, sin tecnicismos innecesarios, para que puedas tomar decisiones con plena confianza.</p>
+        <div class="destacado">Atención personalizada, respuesta rápida y acompañamiento en cada etapa del proceso.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICIOS -->
+<section class="servicios" id="servicios">
+  <div class="container">
+    <div class="section-tag">Servicios</div>
+    <h2 class="section-title">¿En qué te puedo ayudar?</h2>
+    <p class="section-sub">Trabajo en las áreas donde las personas más necesitan orientación legal de calidad y confianza.</p>
+    <div class="servicios-grid">
+      <div class="servicio-card">
+        <div class="servicio-icon">👨‍👩‍👧</div>
+        <h3>Derecho de Familia</h3>
+        <p>Te acompaño en los procesos que involucran a tus seres queridos con sensibilidad y profesionalismo.</p>
+        <ul class="servicio-lista">
+          <li>Divorcios y separaciones</li>
+          <li>Tenencia y régimen de visitas</li>
+          <li>Alimentos y cuota alimentaria</li>
+          <li>Adopciones y tutelas</li>
+          <li>Violencia familiar (medidas de protección)</li>
+        </ul>
+      </div>
+      <div class="servicio-card">
+        <div class="servicio-icon">👷</div>
+        <h3>Derecho Laboral</h3>
+        <p>Defendemos tus derechos como trabajador frente a despidos injustificados, accidentes y abusos laborales.</p>
+        <ul class="servicio-lista">
+          <li>Despidos y liquidaciones</li>
+          <li>Accidentes de trabajo (ART)</li>
+          <li>Reclamos de haberes adeudados</li>
+          <li>Trabajo no registrado / en negro</li>
+          <li>Mobbing y acoso laboral</li>
+        </ul>
+      </div>
+      <div class="servicio-card">
+        <div class="servicio-icon">📋</div>
+        <h3>Derecho Civil y Contratos</h3>
+        <p>Asesoramiento en operaciones, acuerdos y conflictos civiles para proteger tu patrimonio y tus intereses.</p>
+        <ul class="servicio-lista">
+          <li>Redacción y revisión de contratos</li>
+          <li>Compraventa de inmuebles</li>
+          <li>Cobro de deudas y juicios ejecutivos</li>
+          <li>Sucesiones y herencias</li>
+          <li>Daños y perjuicios</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- POR QUÉ -->
+<section class="porque">
+  <div class="container">
+    <div class="section-tag">¿Por qué elegirnos?</div>
+    <h2 class="section-title">Diferente desde el primer contacto</h2>
+    <p class="section-sub">No sos un número de expediente. Sos una persona con una historia, y eso hace toda la diferencia.</p>
+    <div class="porque-grid">
+      <div class="porq-item">
+        <div class="porq-icon">🤝</div>
+        <h4>Trato cercano</h4>
+        <p>Explicaciones claras, sin tecnicismos. Siempre disponible para responder tus dudas.</p>
+      </div>
+      <div class="porq-item">
+        <div class="porq-icon">📍</div>
+        <h4>GBA y CABA</h4>
+        <p>Atendemos en Zona Oeste del GBA y Capital Federal, con consultas presenciales y virtuales.</p>
+      </div>
+      <div class="porq-item">
+        <div class="porq-icon">⚡</div>
+        <h4>Respuesta rápida</h4>
+        <p>Respondemos rápido porque sabemos que los tiempos legales importan.<br/><small style="font-size:.78em;color:rgba(255,255,255,.6);">(Consultas aranceladas según Ley de Honorarios Profesionales)</small></p>
+      </div>
+      <div class="porq-item">
+        <div class="porq-icon">🛡️</div>
+        <h4>Compromiso total</h4>
+        <p>Me involucro en cada caso como si fuera el único. Tu tranquilidad es mi objetivo.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ZONA -->
+<section class="zona" id="zona">
+  <div class="container">
+    <div class="section-tag">Cobertura</div>
+    <h2 class="section-title">Atendemos en Zona Oeste del GBA y Capital Federal</h2>
+    <p class="section-sub" style="margin:0 auto;">Si vivís o trabajás en alguno de estos lugares, podemos ayudarte. También atendemos de forma virtual.</p>
+    <div class="zona-chips">
+      <span class="chip capital">📍 Capital Federal (CABA)</span>
+      <span class="chip">Morón</span>
+      <span class="chip">Ituzaingó</span>
+      <span class="chip">Hurlingham</span>
+      <span class="chip">Merlo</span>
+      <span class="chip">Moreno</span>
+      <span class="chip">La Matanza</span>
+      <span class="chip">Tres de Febrero</span>
+      <span class="chip">Marcos Paz</span>
+      <span class="chip">General Rodríguez</span>
+      <span class="chip">Luján</span>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTO -->
+<section class="contacto" id="contacto">
+  <div class="container">
+    <div class="section-tag">Contacto</div>
+    <h2 class="section-title">Hablemos.<br/><span style="font-size:0.55em;font-family:'Lato',sans-serif;font-weight:400;color:var(--gris);-webkit-text-stroke:0px;letter-spacing:0.3px;">(Consultas aranceladas según Ley de Honorarios Profesionales)</span></h2>
+    <div class="contacto-grid">
+      <div class="contact-info">
+        <h3>Estoy para escucharte</h3>
+        <div class="contact-item">
+          <div class="contact-item-icon">💬</div>
+          <div class="contact-item-text">
+            <strong>WhatsApp</strong>
+            <a href="https://wa.me/541156629575" target="_blank">11 5662-9575</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item-icon">📧</div>
+          <div class="contact-item-text">
+            <strong>Email</strong>
+            <a href="mailto:estudiojuridico@profesionalesdelderecho.com">estudiojuridico@profesionalesdelderecho.com</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item-icon">⏰</div>
+          <div class="contact-item-text">
+            <strong>Horario de atención</strong>
+            Lunes a viernes · 9 a 18 hs
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item-icon">📍</div>
+          <div class="contact-item-text">
+            <strong>Zona de cobertura</strong>
+            Zona Oeste GBA y Capital Federal · Consultas virtuales disponibles
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item-icon">🏛️</div>
+          <div class="contact-item-text">
+            <strong>Atención presencial</strong>
+            Caseros y Liniers · <em>Previa cita</em>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h3 style="font-family:'Playfair Display',serif;font-size:1.3rem;margin-bottom:20px;color:var(--marron);">Enviame tu consulta</h3>
+        <div class="form-group">
+          <label>NOMBRE COMPLETO</label>
+          <input type="text" placeholder="Tu nombre y apellido"/>
+        </div>
+        <div class="form-group">
+          <label>TELÉFONO</label>
+          <input type="tel" placeholder="Tu número de contacto"/>
+        </div>
+        <div class="form-group">
+          <label>ÁREA DE CONSULTA</label>
+          <select>
+            <option value="">Seleccioná un área</option>
+            <option>Derecho de Familia</option>
+            <option>Derecho Laboral</option>
+            <option>Derecho Civil / Contratos</option>
+            <option>Otro</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>TU CONSULTA</label>
+          <textarea placeholder="Contame brevemente tu situación..."></textarea>
+        </div>
+        <button class="btn-submit" onclick="alert('¡Gracias por tu consulta! La Dra. Agrasar se comunicará con vos a la brevedad.')">Enviar consulta →</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2025 <span>Dra. María de los Ángeles Agrasar</span> · Abogada · Matriculada en Capital Federal, Provincia de Buenos Aires y Fuero Federal</p>
+  <p style="margin-top:8px;">Zona Oeste GBA y Capital Federal · 📞 11 5662-9575 · ✉️ estudiojuridico@profesionalesdelderecho.com</p>
+</footer>
+
+<!-- WhatsApp flotante -->
+<a class="wa-btn" href="https://wa.me/541156629575?text=Hola%20Dra.%20Agrasar%2C%20quisiera%20hacer%20una%20consulta." target="_blank" title="Escribime por WhatsApp">💬</a>
+
+</body>
+</html>
