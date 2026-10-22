@@ -79,6 +79,9 @@ input:focus,select:focus,textarea:focus,button:focus-visible,a:focus-visible{out
 .num{font-variant-numeric:tabular-nums;user-select:all}
 footer{border-top:1px solid var(--line);padding-top:16px;font-size:13px;color:var(--muted);display:flex;flex-direction:column;gap:6px}
 footer p{margin:0}
+.price{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 12px;background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:10px;padding:12px 16px;margin-top:4px}
+.price b{font-family:var(--display);font-weight:400;font-size:26px;font-variant-numeric:tabular-nums}
+.price span{color:var(--muted);font-size:14px}
 </style>
 
 <div class="wrap">
@@ -86,6 +89,7 @@ footer p{margin:0}
     <div class="mat">T° 92 F° 110 C.P.A.C.F. · T° VII F° 160 C.A.L.M.</div>
     <h1>Reservá tu consulta con la Dra. María de los Ángeles Agrasar</h1>
     <p class="lead">Consultas online por videollamada, desde donde estés. Analizamos tu situación, te explico tus opciones y te llevás un resumen escrito.</p>
+    <div class="price"><span>Consulta online</span><b>$80.000</b><span>Pago por adelantado por transferencia</span></div>
     <div class="areas"><span>Laboral</span><span>Civil y comercial</span><span>Familia</span><span>Sucesiones</span><span>Consumidor</span></div>
   </header>
 
@@ -94,7 +98,7 @@ footer p{margin:0}
     <ol class="steps">
       <li><div><b>Completás el formulario</b><span>Elegís el tema, la modalidad y el horario que te queda mejor.</span></div></li>
       <li><div><b>Nos enviás el mensaje por WhatsApp</b><span>El formulario arma el mensaje por vos.</span></div></li>
-      <li><div><b>Confirmamos día, hora y pago</b><span>La consulta se abona por adelantado para reservar el turno.</span></div></li>
+      <li><div><b>Confirmamos día, hora y pago</b><span>La consulta ($80.000) se abona por adelantado por transferencia para reservar el turno.</span></div></li>
       <li><div><b>Consulta online y resumen escrito</b><span>Videollamada de 30 a 45 minutos. Enviá antes la documentación que tengas y después recibís el resumen por escrito.</span></div></li>
     </ol>
   </section>
