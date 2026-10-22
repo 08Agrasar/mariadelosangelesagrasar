@@ -2,6 +2,24 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8"/>
+<!-- Google tag (gtag.js) - Google Ads AW-986364085 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-986364085"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-986364085');
+  // Conversion "Contacto WhatsApp": every click on a WhatsApp link
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('a[href*="wa.me"], a[href*="api.whatsapp.com"]');
+    if (a) {
+      gtag('event', 'conversion', {
+        'send_to': 'AW-986364085/2GFACIXvo6YdELXxqtYD',
+        'transport_type': 'beacon'
+      });
+    }
+  });
+</script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Abogada en Morón, Tres de Febrero, La Matanza, San Miguel, Ramos Mejía y CABA | Dra. Agrasar</title>
 <meta name="description" content="Abogada matriculada en Capital Federal, Provincia de Buenos Aires y Fuero Federal. Especialista en derecho de familia, laboral y civil. Atención en Morón, Tres de Febrero, La Matanza, San Miguel, Ramos Mejía y CABA. Llamá hoy: 11 5662-9575."/>
